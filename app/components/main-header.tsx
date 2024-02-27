@@ -10,18 +10,16 @@ const MainHeader = () => {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Level Up Food</span>
-            <Image
-              className="h-8 w-auto"
-              src={logoImg.src}
-              alt="A plate with food on it"
-              width={50}
-              height={50}
-            />
-          </Link>
-        </div>
+        <Link href="/" className="flex items-center lg:flex-1">
+          <Image
+            className="h-8 w-auto"
+            src={logoImg.src}
+            alt="A plate with food on it"
+            width={50}
+            height={50}
+          />
+          <span className="ml-1.5">Level Up Food</span>
+        </Link>
         <div className="hidden lg:flex lg:gap-x-12">
           <Link href="/meals" className="text-sm font-semibold leading-6">
             Meals
